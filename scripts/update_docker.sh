@@ -17,6 +17,7 @@ echo -e "${YELLOW}=> Beginning the update of docker engine${NC}"
 removeOld() {
   echo -e "${YELLOW}=> Removing old versions installed of docker${NC}"
   sudo apt-get remove docker docker-engine docker.io containerd runc
+  fetchingRepository
 }
 
 fetchingRepository() {
